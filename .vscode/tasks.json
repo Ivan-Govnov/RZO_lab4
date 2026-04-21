@@ -1,0 +1,26 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build opencv msvc",
+            "type": "shell",
+            "command": "cl.exe",
+            "args": [
+                "/EHsc",
+                "/Fe:",
+                "${workspaceFolder}/src/main.exe",
+                "/IC:\\opencv\\build\\include",
+                "/IC:\\opencv\\build\\include\\opencv2",
+                "${workspaceFolder}/src/main.cpp",
+                "/link",
+                "/LIBPATH:C:\\opencv\\build\\x64\\vc16\\lib",
+                "opencv_world480.lib"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$msCompile"]
+        }
+    ]
+}

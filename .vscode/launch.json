@@ -1,0 +1,29 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "OpenCV Launch (external console)",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/main.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}/src",
+            "environment": [],
+            "console": "externalTerminal",
+            "preLaunchTask": "build opencv msvc"
+        },
+        {
+            "name": "OpenCV Launch (integrated console)",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/main.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}/src",
+            "environment": [],
+            "console": "integratedTerminal",
+            "preLaunchTask": "build opencv msvc"
+        }
+    ]
+}
